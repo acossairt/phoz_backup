@@ -1,0 +1,1 @@
+/home/acossairt/miniconda3/envs/ML_env/bin/postgres "-D" "/data/a/cpac/aurora/MDN_phoZ/hps_phoz/balsamdb"

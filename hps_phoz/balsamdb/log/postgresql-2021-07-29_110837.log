@@ -1,0 +1,10 @@
+2021-07-29 11:08:37.957 CDT [58037] LOG:  database system was shut down at 2021-07-29 11:08:03 CDT
+2021-07-29 11:08:38.004 CDT [58035] LOG:  database system is ready to accept connections
+2021-07-29 11:08:38.274 CDT [58044] LOG:  connection received: host=146.139.10.20 port=56102
+2021-07-29 11:08:38.275 CDT [58044] LOG:  connection authorized: user=acossairt database=balsam
+2021-07-29 11:08:38.284 CDT [58044] LOG:  duration: 0.410 ms  statement: SET TIME ZONE 'UTC'
+2021-07-29 11:08:38.287 CDT [58044] LOG:  duration: 2.550 ms  statement: SELECT COUNT(*) AS "__count" FROM "core_balsamjob"
+2021-07-29 11:22:11.132 CDT [9976] LOG:  connection received: host=146.139.10.20 port=58924
+2021-07-29 11:22:11.134 CDT [9976] LOG:  connection authorized: user=acossairt database=balsam
+2021-07-29 11:22:11.137 CDT [9976] LOG:  duration: 0.378 ms  statement: SET TIME ZONE 'UTC'
+2021-07-29 11:22:11.139 CDT [9976] LOG:  duration: 1.717 ms  statement: SELECT (1) AS "a" FROM "core_balsamjob" LIMIT 1

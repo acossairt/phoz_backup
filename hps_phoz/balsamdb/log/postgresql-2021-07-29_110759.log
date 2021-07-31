@@ -1,0 +1,406 @@
+2021-07-29 11:07:59.623 CDT [57289] LOG:  database system was shut down at 2021-07-29 11:07:58 CDT
+2021-07-29 11:07:59.728 CDT [57287] LOG:  database system is ready to accept connections
+2021-07-29 11:07:59.768 CDT [57299] LOG:  connection received: host=[local]
+2021-07-29 11:07:59.769 CDT [57299] LOG:  connection authorized: user=acossairt database=postgres application_name=createdb
+2021-07-29 11:07:59.778 CDT [57299] LOG:  duration: 0.891 ms  statement: SELECT pg_catalog.set_config('search_path', '', false);
+2021-07-29 11:08:00.406 CDT [57299] LOG:  duration: 627.475 ms  statement: CREATE DATABASE balsam;
+2021-07-29 11:08:00.660 CDT [57353] LOG:  connection received: host=146.139.10.20 port=53688
+2021-07-29 11:08:00.662 CDT [57353] LOG:  connection authorized: user=acossairt database=balsam
+2021-07-29 11:08:00.670 CDT [57353] LOG:  duration: 0.371 ms  statement: SET TIME ZONE 'UTC'
+2021-07-29 11:08:00.675 CDT [57353] LOG:  duration: 3.909 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:00.719 CDT [57353] LOG:  duration: 0.836 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:00.720 CDT [57353] LOG:  duration: 0.710 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:00.721 CDT [57353] LOG:  duration: 0.708 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:00.721 CDT [57353] LOG:  duration: 0.020 ms  statement: BEGIN
+2021-07-29 11:08:00.803 CDT [57353] LOG:  duration: 81.290 ms  statement: CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL)
+2021-07-29 11:08:00.803 CDT [57353] LOG:  duration: 0.086 ms  statement: COMMIT
+2021-07-29 11:08:00.809 CDT [57353] LOG:  duration: 0.062 ms  statement: BEGIN
+2021-07-29 11:08:00.860 CDT [57353] LOG:  duration: 50.798 ms  statement: CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL)
+2021-07-29 11:08:00.902 CDT [57353] LOG:  duration: 39.099 ms  statement: ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_model_76bd3d3b_uniq" UNIQUE ("app_label", "model")
+2021-07-29 11:08:00.904 CDT [57353] LOG:  duration: 0.984 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:00.908 CDT [57353] LOG:  duration: 0.685 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2021-07-29T16:08:00.904782+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:00.908 CDT [57353] LOG:  duration: 0.082 ms  statement: COMMIT
+2021-07-29 11:08:00.913 CDT [57353] LOG:  duration: 0.061 ms  statement: BEGIN
+2021-07-29 11:08:00.953 CDT [57353] LOG:  duration: 40.014 ms  statement: CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL)
+2021-07-29 11:08:01.044 CDT [57353] LOG:  duration: 82.930 ms  statement: CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE)
+2021-07-29 11:08:01.087 CDT [57353] LOG:  duration: 41.683 ms  statement: CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL)
+2021-07-29 11:08:01.186 CDT [57353] LOG:  duration: 86.008 ms  statement: CREATE TABLE "auth_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NOT NULL, "is_superuser" boolean NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL)
+2021-07-29 11:08:01.224 CDT [57353] LOG:  duration: 37.446 ms  statement: CREATE TABLE "auth_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL)
+2021-07-29 11:08:01.266 CDT [57353] LOG:  duration: 40.610 ms  statement: CREATE TABLE "auth_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL)
+2021-07-29 11:08:01.294 CDT [57353] LOG:  duration: 26.621 ms  statement: ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_codename_01ab375a_uniq" UNIQUE ("content_type_id", "codename")
+2021-07-29 11:08:01.297 CDT [57353] LOG:  duration: 2.614 ms  statement: ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.350 CDT [57353] LOG:  duration: 51.902 ms  statement: CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id")
+2021-07-29 11:08:01.394 CDT [57353] LOG:  duration: 44.016 ms  statement: CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops)
+2021-07-29 11:08:01.437 CDT [57353] LOG:  duration: 42.376 ms  statement: ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" UNIQUE ("group_id", "permission_id")
+2021-07-29 11:08:01.439 CDT [57353] LOG:  duration: 1.431 ms  statement: ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.441 CDT [57353] LOG:  duration: 1.115 ms  statement: ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.483 CDT [57353] LOG:  duration: 42.166 ms  statement: CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id")
+2021-07-29 11:08:01.528 CDT [57353] LOG:  duration: 43.812 ms  statement: CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id")
+2021-07-29 11:08:01.571 CDT [57353] LOG:  duration: 42.344 ms  statement: CREATE INDEX "auth_user_username_6821ab7c_like" ON "auth_user" ("username" varchar_pattern_ops)
+2021-07-29 11:08:01.596 CDT [57353] LOG:  duration: 24.658 ms  statement: ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_group_id_94350c0c_uniq" UNIQUE ("user_id", "group_id")
+2021-07-29 11:08:01.598 CDT [57353] LOG:  duration: 1.525 ms  statement: ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.600 CDT [57353] LOG:  duration: 1.061 ms  statement: ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_group_id_97559544_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.634 CDT [57353] LOG:  duration: 33.732 ms  statement: CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id")
+2021-07-29 11:08:01.679 CDT [57353] LOG:  duration: 44.984 ms  statement: CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id")
+2021-07-29 11:08:01.704 CDT [57353] LOG:  duration: 24.570 ms  statement: ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" UNIQUE ("user_id", "permission_id")
+2021-07-29 11:08:01.706 CDT [57353] LOG:  duration: 1.357 ms  statement: ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.708 CDT [57353] LOG:  duration: 1.064 ms  statement: ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.742 CDT [57353] LOG:  duration: 33.856 ms  statement: CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id")
+2021-07-29 11:08:01.796 CDT [57353] LOG:  duration: 53.399 ms  statement: CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id")
+2021-07-29 11:08:01.797 CDT [57353] LOG:  duration: 0.282 ms  statement: COMMIT
+2021-07-29 11:08:01.799 CDT [57353] LOG:  duration: 1.190 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:01.800 CDT [57353] LOG:  duration: 0.284 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2021-07-29T16:08:01.799457+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:01.814 CDT [57353] LOG:  duration: 0.029 ms  statement: BEGIN
+2021-07-29 11:08:01.901 CDT [57353] LOG:  duration: 86.625 ms  statement: CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL)
+2021-07-29 11:08:01.904 CDT [57353] LOG:  duration: 1.383 ms  statement: ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.905 CDT [57353] LOG:  duration: 1.343 ms  statement: ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:01.947 CDT [57353] LOG:  duration: 40.559 ms  statement: CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id")
+2021-07-29 11:08:01.979 CDT [57353] LOG:  duration: 31.466 ms  statement: CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id")
+2021-07-29 11:08:01.979 CDT [57353] LOG:  duration: 0.104 ms  statement: COMMIT
+2021-07-29 11:08:01.980 CDT [57353] LOG:  duration: 0.967 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:01.982 CDT [57353] LOG:  duration: 0.258 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2021-07-29T16:08:01.981246+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:01.996 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:01.997 CDT [57353] LOG:  duration: 0.861 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:01.998 CDT [57353] LOG:  duration: 0.243 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2021-07-29T16:08:01.997685+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:01.998 CDT [57353] LOG:  duration: 0.050 ms  statement: COMMIT
+2021-07-29 11:08:02.007 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:02.008 CDT [57353] LOG:  duration: 0.856 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.009 CDT [57353] LOG:  duration: 0.209 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0003_logentry_add_action_flag_choices', '2021-07-29T16:08:02.008782+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.009 CDT [57353] LOG:  duration: 0.047 ms  statement: COMMIT
+2021-07-29 11:08:02.015 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:02.016 CDT [57353] LOG:  duration: 0.246 ms  statement: ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL
+2021-07-29 11:08:02.024 CDT [57353] LOG:  duration: 0.653 ms  statement: ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE
+2021-07-29 11:08:02.025 CDT [57353] LOG:  duration: 0.856 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.026 CDT [57353] LOG:  duration: 0.203 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2021-07-29T16:08:02.025697+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.026 CDT [57353] LOG:  duration: 0.052 ms  statement: COMMIT
+2021-07-29 11:08:02.032 CDT [57353] LOG:  duration: 0.035 ms  statement: BEGIN
+2021-07-29 11:08:02.032 CDT [57353] LOG:  duration: 0.354 ms  statement: ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255)
+2021-07-29 11:08:02.033 CDT [57353] LOG:  duration: 0.846 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.034 CDT [57353] LOG:  duration: 0.200 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2021-07-29T16:08:02.033698+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.034 CDT [57353] LOG:  duration: 0.050 ms  statement: COMMIT
+2021-07-29 11:08:02.038 CDT [57353] LOG:  duration: 0.034 ms  statement: BEGIN
+2021-07-29 11:08:02.039 CDT [57353] LOG:  duration: 0.315 ms  statement: ALTER TABLE "auth_user" ALTER COLUMN "email" TYPE varchar(254)
+2021-07-29 11:08:02.040 CDT [57353] LOG:  duration: 0.827 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.040 CDT [57353] LOG:  duration: 0.200 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2021-07-29T16:08:02.040447+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.041 CDT [57353] LOG:  duration: 0.049 ms  statement: COMMIT
+2021-07-29 11:08:02.045 CDT [57353] LOG:  duration: 0.034 ms  statement: BEGIN
+2021-07-29 11:08:02.046 CDT [57353] LOG:  duration: 0.848 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.047 CDT [57353] LOG:  duration: 0.203 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2021-07-29T16:08:02.046675+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.047 CDT [57353] LOG:  duration: 0.045 ms  statement: COMMIT
+2021-07-29 11:08:02.051 CDT [57353] LOG:  duration: 0.027 ms  statement: BEGIN
+2021-07-29 11:08:02.052 CDT [57353] LOG:  duration: 0.261 ms  statement: ALTER TABLE "auth_user" ALTER COLUMN "last_login" DROP NOT NULL
+2021-07-29 11:08:02.053 CDT [57353] LOG:  duration: 0.825 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.053 CDT [57353] LOG:  duration: 0.198 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2021-07-29T16:08:02.053158+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.053 CDT [57353] LOG:  duration: 0.049 ms  statement: COMMIT
+2021-07-29 11:08:02.053 CDT [57353] LOG:  duration: 0.017 ms  statement: BEGIN
+2021-07-29 11:08:02.054 CDT [57353] LOG:  duration: 0.781 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.055 CDT [57353] LOG:  duration: 0.189 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2021-07-29T16:08:02.054899+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.055 CDT [57353] LOG:  duration: 0.041 ms  statement: COMMIT
+2021-07-29 11:08:02.059 CDT [57353] LOG:  duration: 0.027 ms  statement: BEGIN
+2021-07-29 11:08:02.060 CDT [57353] LOG:  duration: 0.840 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.061 CDT [57353] LOG:  duration: 0.220 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2021-07-29T16:08:02.061048+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.061 CDT [57353] LOG:  duration: 0.045 ms  statement: COMMIT
+2021-07-29 11:08:02.066 CDT [57353] LOG:  duration: 0.026 ms  statement: BEGIN
+2021-07-29 11:08:02.130 CDT [57353] LOG:  duration: 64.062 ms  statement: ALTER TABLE "auth_user" ALTER COLUMN "username" TYPE varchar(150)
+2021-07-29 11:08:02.132 CDT [57353] LOG:  duration: 0.889 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.133 CDT [57353] LOG:  duration: 0.264 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2021-07-29T16:08:02.132510+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.133 CDT [57353] LOG:  duration: 0.085 ms  statement: COMMIT
+2021-07-29 11:08:02.147 CDT [57353] LOG:  duration: 0.054 ms  statement: BEGIN
+2021-07-29 11:08:02.148 CDT [57353] LOG:  duration: 0.387 ms  statement: ALTER TABLE "auth_user" ALTER COLUMN "last_name" TYPE varchar(150)
+2021-07-29 11:08:02.149 CDT [57353] LOG:  duration: 0.857 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.150 CDT [57353] LOG:  duration: 0.239 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0009_alter_user_last_name_max_length', '2021-07-29T16:08:02.149829+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.150 CDT [57353] LOG:  duration: 0.065 ms  statement: COMMIT
+2021-07-29 11:08:02.159 CDT [57353] LOG:  duration: 0.036 ms  statement: BEGIN
+2021-07-29 11:08:02.161 CDT [57353] LOG:  duration: 1.685 ms  statement: ALTER TABLE "auth_group" ALTER COLUMN "name" TYPE varchar(150)
+2021-07-29 11:08:02.162 CDT [57353] LOG:  duration: 0.846 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.163 CDT [57353] LOG:  duration: 0.202 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0010_alter_group_name_max_length', '2021-07-29T16:08:02.163004+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.163 CDT [57353] LOG:  duration: 0.059 ms  statement: COMMIT
+2021-07-29 11:08:02.172 CDT [57353] LOG:  duration: 0.047 ms  statement: BEGIN
+2021-07-29 11:08:02.173 CDT [57353] LOG:  duration: 0.893 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.174 CDT [57353] LOG:  duration: 0.209 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0011_update_proxy_permissions', '2021-07-29T16:08:02.174209+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.174 CDT [57353] LOG:  duration: 0.046 ms  statement: COMMIT
+2021-07-29 11:08:02.180 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:02.180 CDT [57353] LOG:  duration: 0.363 ms  statement: ALTER TABLE "auth_user" ALTER COLUMN "first_name" TYPE varchar(150)
+2021-07-29 11:08:02.181 CDT [57353] LOG:  duration: 0.855 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.182 CDT [57353] LOG:  duration: 0.201 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0012_alter_user_first_name_max_length', '2021-07-29T16:08:02.182134+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.182 CDT [57353] LOG:  duration: 0.051 ms  statement: COMMIT
+2021-07-29 11:08:02.184 CDT [57353] LOG:  duration: 0.036 ms  statement: BEGIN
+2021-07-29 11:08:02.272 CDT [57353] LOG:  duration: 88.260 ms  statement: CREATE TABLE "core_applicationdefinition" ("id" serial NOT NULL PRIMARY KEY, "name" text NOT NULL UNIQUE, "description" text NOT NULL, "executable" text NOT NULL, "preprocess" text NOT NULL, "envscript" text NOT NULL, "postprocess" text NOT NULL)
+2021-07-29 11:08:02.360 CDT [57353] LOG:  duration: 83.790 ms  statement: CREATE TABLE "core_queuedlaunch" ("id" serial NOT NULL PRIMARY KEY, "scheduler_id" integer NOT NULL, "project" text NOT NULL, "queue" text NOT NULL, "nodes" integer NOT NULL, "wall_minutes" integer NOT NULL, "job_mode" text NOT NULL, "wf_filter" text NOT NULL, "sched_flags" text NOT NULL, "command" text NOT NULL, "state" text NOT NULL, "prescheduled_only" boolean NOT NULL, "from_balsam" boolean NOT NULL)
+2021-07-29 11:08:02.456 CDT [57353] LOG:  duration: 86.499 ms  statement: CREATE TABLE "core_balsamjob" ("job_id" uuid NOT NULL PRIMARY KEY, "workflow" text NOT NULL, "name" text NOT NULL, "description" text NOT NULL, "lock" text NOT NULL, "tick" timestamp with time zone NOT NULL, "parents" text NOT NULL, "input_files" text NOT NULL, "stage_in_url" text NOT NULL, "stage_out_files" text NOT NULL, "stage_out_url" text NOT NULL, "wall_time_minutes" integer NOT NULL, "num_nodes" integer NOT NULL, "coschedule_num_nodes" integer NOT NULL, "ranks_per_node" integer NOT NULL, "cpu_affinity" text NOT NULL, "threads_per_rank" integer NOT NULL, "threads_per_core" integer NOT NULL, "node_packing_count" integer NOT NULL, "environ_vars" text NOT NULL, "mpi_flags" text NOT NULL, "application" text NOT NULL, "args" text NOT NULL, "user_workdir" text NOT NULL, "wait_for_parents" boolean NOT NULL, "post_error_handler" boolean NOT NULL, "post_timeout_handler" boolean NOT NULL, "auto_timeout_retry" boolean NOT NULL, "state" text NOT NULL, "state_history" text NOT NULL, "data" jsonb NOT NULL, "queued_launch_id" integer NULL)
+2021-07-29 11:08:02.502 CDT [57353] LOG:  duration: 44.699 ms  statement: CREATE INDEX "core_applicationdefinition_name_01142fc7_like" ON "core_applicationdefinition" ("name" text_pattern_ops)
+2021-07-29 11:08:02.527 CDT [57353] LOG:  duration: 24.575 ms  statement: CREATE INDEX "core_queuedlaunch_scheduler_id_6c9fd020" ON "core_queuedlaunch" ("scheduler_id")
+2021-07-29 11:08:02.529 CDT [57353] LOG:  duration: 1.978 ms  statement: ALTER TABLE "core_balsamjob" ADD CONSTRAINT "core_balsamjob_queued_launch_id_4eb1990f_fk_core_queu" FOREIGN KEY ("queued_launch_id") REFERENCES "core_queuedlaunch" ("id") DEFERRABLE INITIALLY DEFERRED
+2021-07-29 11:08:02.556 CDT [57353] LOG:  duration: 25.878 ms  statement: CREATE INDEX "core_balsamjob_lock_90403fe9" ON "core_balsamjob" ("lock")
+2021-07-29 11:08:02.619 CDT [57353] LOG:  duration: 62.276 ms  statement: CREATE INDEX "core_balsamjob_lock_90403fe9_like" ON "core_balsamjob" ("lock" text_pattern_ops)
+2021-07-29 11:08:02.660 CDT [57353] LOG:  duration: 41.100 ms  statement: CREATE INDEX "core_balsamjob_num_nodes_f4c197c5" ON "core_balsamjob" ("num_nodes")
+2021-07-29 11:08:02.685 CDT [57353] LOG:  duration: 24.631 ms  statement: CREATE INDEX "core_balsamjob_state_a7e27ece" ON "core_balsamjob" ("state")
+2021-07-29 11:08:02.719 CDT [57353] LOG:  duration: 32.903 ms  statement: CREATE INDEX "core_balsamjob_state_a7e27ece_like" ON "core_balsamjob" ("state" text_pattern_ops)
+2021-07-29 11:08:02.763 CDT [57353] LOG:  duration: 43.837 ms  statement: CREATE INDEX "core_balsamjob_queued_launch_id_4eb1990f" ON "core_balsamjob" ("queued_launch_id")
+2021-07-29 11:08:02.764 CDT [57353] LOG:  duration: 0.177 ms  statement: COMMIT
+2021-07-29 11:08:02.765 CDT [57353] LOG:  duration: 1.129 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.767 CDT [57353] LOG:  duration: 0.281 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('core', '0001_initial', '2021-07-29T16:08:02.766459+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.770 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:02.830 CDT [57353] LOG:  duration: 59.687 ms  statement: CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL)
+2021-07-29 11:08:02.865 CDT [57353] LOG:  duration: 33.853 ms  statement: CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops)
+2021-07-29 11:08:02.907 CDT [57353] LOG:  duration: 41.281 ms  statement: CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date")
+2021-07-29 11:08:02.907 CDT [57353] LOG:  duration: 0.082 ms  statement: COMMIT
+2021-07-29 11:08:02.908 CDT [57353] LOG:  duration: 0.933 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.910 CDT [57353] LOG:  duration: 0.236 ms  statement: INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2021-07-29T16:08:02.909149+00:00'::timestamptz) RETURNING "django_migrations"."id"
+2021-07-29 11:08:02.911 CDT [57353] LOG:  duration: 0.835 ms  statement: 
+	            SELECT c.relname,
+	            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+	            FROM pg_catalog.pg_class c
+	            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+	            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+	                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+	                AND pg_catalog.pg_table_is_visible(c.oid)
+	        
+2021-07-29 11:08:02.912 CDT [57353] LOG:  duration: 0.257 ms  statement: SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"
+2021-07-29 11:08:02.932 CDT [57353] LOG:  duration: 1.029 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'core'
+2021-07-29 11:08:02.933 CDT [57353] LOG:  duration: 0.029 ms  statement: BEGIN
+2021-07-29 11:08:02.934 CDT [57353] LOG:  duration: 0.613 ms  statement: INSERT INTO "django_content_type" ("app_label", "model") VALUES ('core', 'applicationdefinition'), ('core', 'queuedlaunch'), ('core', 'balsamjob') RETURNING "django_content_type"."id"
+2021-07-29 11:08:02.934 CDT [57353] LOG:  duration: 0.045 ms  statement: COMMIT
+2021-07-29 11:08:02.935 CDT [57353] LOG:  duration: 0.274 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'applicationdefinition') LIMIT 21
+2021-07-29 11:08:02.937 CDT [57353] LOG:  duration: 0.197 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'queuedlaunch') LIMIT 21
+2021-07-29 11:08:02.938 CDT [57353] LOG:  duration: 0.176 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'core' AND "django_content_type"."model" = 'balsamjob') LIMIT 21
+2021-07-29 11:08:02.941 CDT [57353] LOG:  duration: 1.043 ms  statement: SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1, 2, 3) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC
+2021-07-29 11:08:02.943 CDT [57353] LOG:  duration: 0.028 ms  statement: BEGIN
+2021-07-29 11:08:02.944 CDT [57353] LOG:  duration: 0.853 ms  statement: INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add application definition', 1, 'add_applicationdefinition'), ('Can change application definition', 1, 'change_applicationdefinition'), ('Can delete application definition', 1, 'delete_applicationdefinition'), ('Can view application definition', 1, 'view_applicationdefinition'), ('Can add queued launch', 2, 'add_queuedlaunch'), ('Can change queued launch', 2, 'change_queuedlaunch'), ('Can delete queued launch', 2, 'delete_queuedlaunch'), ('Can view queued launch', 2, 'view_queuedlaunch'), ('Can add balsam job', 3, 'add_balsamjob'), ('Can change balsam job', 3, 'change_balsamjob'), ('Can delete balsam job', 3, 'delete_balsamjob'), ('Can view balsam job', 3, 'view_balsamjob') RETURNING "auth_permission"."id"
+2021-07-29 11:08:02.945 CDT [57353] LOG:  duration: 0.817 ms  statement: COMMIT
+2021-07-29 11:08:02.945 CDT [57353] LOG:  duration: 0.177 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'core'
+2021-07-29 11:08:02.946 CDT [57353] LOG:  duration: 0.136 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'
+2021-07-29 11:08:02.947 CDT [57353] LOG:  duration: 0.015 ms  statement: BEGIN
+2021-07-29 11:08:02.947 CDT [57353] LOG:  duration: 0.171 ms  statement: INSERT INTO "django_content_type" ("app_label", "model") VALUES ('admin', 'logentry') RETURNING "django_content_type"."id"
+2021-07-29 11:08:02.947 CDT [57353] LOG:  duration: 0.036 ms  statement: COMMIT
+2021-07-29 11:08:02.948 CDT [57353] LOG:  duration: 0.202 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21
+2021-07-29 11:08:02.950 CDT [57353] LOG:  duration: 0.307 ms  statement: SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC
+2021-07-29 11:08:02.950 CDT [57353] LOG:  duration: 0.015 ms  statement: BEGIN
+2021-07-29 11:08:02.951 CDT [57353] LOG:  duration: 0.269 ms  statement: INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add log entry', 4, 'add_logentry'), ('Can change log entry', 4, 'change_logentry'), ('Can delete log entry', 4, 'delete_logentry'), ('Can view log entry', 4, 'view_logentry') RETURNING "auth_permission"."id"
+2021-07-29 11:08:02.951 CDT [57353] LOG:  duration: 0.162 ms  statement: COMMIT
+2021-07-29 11:08:02.952 CDT [57353] LOG:  duration: 0.165 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'
+2021-07-29 11:08:02.953 CDT [57353] LOG:  duration: 0.155 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'
+2021-07-29 11:08:02.953 CDT [57353] LOG:  duration: 0.014 ms  statement: BEGIN
+2021-07-29 11:08:02.954 CDT [57353] LOG:  duration: 0.235 ms  statement: INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'permission'), ('auth', 'group'), ('auth', 'user') RETURNING "django_content_type"."id"
+2021-07-29 11:08:02.954 CDT [57353] LOG:  duration: 0.034 ms  statement: COMMIT
+2021-07-29 11:08:02.955 CDT [57353] LOG:  duration: 0.200 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21
+2021-07-29 11:08:02.956 CDT [57353] LOG:  duration: 0.172 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21
+2021-07-29 11:08:02.957 CDT [57353] LOG:  duration: 0.166 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21
+2021-07-29 11:08:02.959 CDT [57353] LOG:  duration: 0.499 ms  statement: SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5, 6, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC
+2021-07-29 11:08:02.960 CDT [57353] LOG:  duration: 0.018 ms  statement: BEGIN
+2021-07-29 11:08:02.961 CDT [57353] LOG:  duration: 0.491 ms  statement: INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add permission', 5, 'add_permission'), ('Can change permission', 5, 'change_permission'), ('Can delete permission', 5, 'delete_permission'), ('Can view permission', 5, 'view_permission'), ('Can add group', 6, 'add_group'), ('Can change group', 6, 'change_group'), ('Can delete group', 6, 'delete_group'), ('Can view group', 6, 'view_group'), ('Can add user', 7, 'add_user'), ('Can change user', 7, 'change_user'), ('Can delete user', 7, 'delete_user'), ('Can view user', 7, 'view_user') RETURNING "auth_permission"."id"
+2021-07-29 11:08:02.961 CDT [57353] LOG:  duration: 0.331 ms  statement: COMMIT
+2021-07-29 11:08:02.962 CDT [57353] LOG:  duration: 0.185 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'
+2021-07-29 11:08:02.963 CDT [57353] LOG:  duration: 0.140 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'
+2021-07-29 11:08:02.964 CDT [57353] LOG:  duration: 0.015 ms  statement: BEGIN
+2021-07-29 11:08:02.964 CDT [57353] LOG:  duration: 0.168 ms  statement: INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype') RETURNING "django_content_type"."id"
+2021-07-29 11:08:02.964 CDT [57353] LOG:  duration: 0.033 ms  statement: COMMIT
+2021-07-29 11:08:02.965 CDT [57353] LOG:  duration: 0.216 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21
+2021-07-29 11:08:02.967 CDT [57353] LOG:  duration: 0.383 ms  statement: SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC
+2021-07-29 11:08:02.967 CDT [57353] LOG:  duration: 0.019 ms  statement: BEGIN
+2021-07-29 11:08:02.968 CDT [57353] LOG:  duration: 0.296 ms  statement: INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add content type', 8, 'add_contenttype'), ('Can change content type', 8, 'change_contenttype'), ('Can delete content type', 8, 'delete_contenttype'), ('Can view content type', 8, 'view_contenttype') RETURNING "auth_permission"."id"
+2021-07-29 11:08:02.968 CDT [57353] LOG:  duration: 0.175 ms  statement: COMMIT
+2021-07-29 11:08:02.969 CDT [57353] LOG:  duration: 0.195 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'
+2021-07-29 11:08:02.970 CDT [57353] LOG:  duration: 0.140 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'
+2021-07-29 11:08:02.970 CDT [57353] LOG:  duration: 0.014 ms  statement: BEGIN
+2021-07-29 11:08:02.970 CDT [57353] LOG:  duration: 0.167 ms  statement: INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sessions', 'session') RETURNING "django_content_type"."id"
+2021-07-29 11:08:02.971 CDT [57353] LOG:  duration: 0.034 ms  statement: COMMIT
+2021-07-29 11:08:02.972 CDT [57353] LOG:  duration: 0.201 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21
+2021-07-29 11:08:02.973 CDT [57353] LOG:  duration: 0.385 ms  statement: SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (9) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC
+2021-07-29 11:08:02.974 CDT [57353] LOG:  duration: 0.019 ms  statement: BEGIN
+2021-07-29 11:08:02.974 CDT [57353] LOG:  duration: 0.300 ms  statement: INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add session', 9, 'add_session'), ('Can change session', 9, 'change_session'), ('Can delete session', 9, 'delete_session'), ('Can view session', 9, 'view_session') RETURNING "auth_permission"."id"
+2021-07-29 11:08:02.975 CDT [57353] LOG:  duration: 0.173 ms  statement: COMMIT
+2021-07-29 11:08:02.976 CDT [57353] LOG:  duration: 0.176 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'
+2021-07-29 11:08:02.976 CDT [57353] LOG:  duration: 0.137 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'widget_tweaks'
+2021-07-29 11:08:02.978 CDT [57353] LOG:  duration: 0.224 ms  statement: SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'widget_tweaks'
+2021-07-29 11:08:02.981 CDT [57353] LOG:  duration: 1.413 ms  statement: INSERT INTO "core_balsamjob" ("job_id", "workflow", "name", "description", "lock", "tick", "parents", "input_files", "stage_in_url", "stage_out_files", "stage_out_url", "wall_time_minutes", "num_nodes", "coschedule_num_nodes", "ranks_per_node", "cpu_affinity", "threads_per_rank", "threads_per_core", "node_packing_count", "environ_vars", "mpi_flags", "application", "args", "user_workdir", "wait_for_parents", "post_error_handler", "post_timeout_handler", "auto_timeout_retry", "state", "state_history", "queued_launch_id", "data") VALUES ('c31889e7-e0a3-47e4-8d94-174e92033c76'::uuid, '', '', '', '', '2021-07-29T16:08:02.979856+00:00'::timestamptz, '[]', '', '', '', '', 1, 1, 0, 1, 'none', 1, 1, 1, '', '', '', '', '', true, false, false, true, 'CREATED', '        
+	[07-29-2021 16:08:02.979541 CREATED] ', NULL, '{}')
+2021-07-29 11:08:02.982 CDT [57353] LOG:  duration: 0.385 ms  statement: DELETE FROM "core_balsamjob" WHERE "core_balsamjob"."job_id" IN ('c31889e7-e0a3-47e4-8d94-174e92033c76'::uuid)
+2021-07-29 11:08:02.991 CDT [57287] LOG:  received smart shutdown request
+2021-07-29 11:08:03.048 CDT [57287] LOG:  background worker "logical replication launcher" (PID 57296) exited with exit code 1
+2021-07-29 11:08:03.050 CDT [57290] LOG:  shutting down
+2021-07-29 11:08:03.420 CDT [57287] LOG:  database system is shut down
