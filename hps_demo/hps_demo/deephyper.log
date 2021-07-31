@@ -1,0 +1,487 @@
+2021-07-22 19:55:10|517|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-22 20:00:36|7459|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-22 20:00:57|7872|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-22 20:00:58|7872|INFO|deephyper.search.search:64] Maximizing the return value of function: hps_demo.polynome2.model_run.run
+2021-07-22 20:00:58|7872|INFO|deephyper.evaluator._ray_evaluator:90] RAY Evaluator init: redis-address=
+2021-07-22 20:01:03|7872|INFO|deephyper.evaluator._ray_evaluator:114] RAY Evaluator will execute: '<function run at 0x7f822403fe60>', proc_info: {'node_ip_address': '146.139.10.20', 'raylet_ip_address': '146.139.10.20', 'redis_address': '146.139.10.20:6379', 'object_store_address': '/tmp/ray/session_2021-07-22_20-00-58_252777_7872/sockets/plasma_store', 'raylet_socket_name': '/tmp/ray/session_2021-07-22_20-00-58_252777_7872/sockets/raylet', 'webui_url': '127.0.0.1:8265', 'session_dir': '/tmp/ray/session_2021-07-22_20-00-58_252777_7872', 'metrics_export_port': 51792, 'node_id': '0459a7a74c36eb511748538af478536ec5d84aaf532513ab6b158f2e'}
+2021-07-22 20:01:03|7872|INFO|deephyper.search.search:81] Options: {   'backend': 'tensorflow',
+    'cache_key': 'to_dict',
+    'driver_num_cpus': None,
+    'driver_num_gpus': None,
+    'eval_timeout_minutes': 4096,
+    'evaluator': 'ray',
+    'max_evals': 100,
+    'num_cpus_per_task': 1,
+    'num_evals_per_node': 1,
+    'num_gpus_per_task': None,
+    'num_nodes_per_eval': 1,
+    'num_ranks_per_node': 1,
+    'num_threads_per_node': None,
+    'num_threads_per_rank': 64,
+    'problem': 'hps_demo.polynome2.problem.Problem',
+    'ray_address': '',
+    'ray_password': '5241590000000000',
+    'run': 'hps_demo.polynome2.model_run.run',
+    'seed': None}
+2021-07-22 20:01:03|7872|INFO|deephyper.search.search:82] Created ray evaluator
+2021-07-22 20:01:03|7872|INFO|deephyper.search.search:83] Evaluator: num_workers is 64
+2021-07-22 20:01:03|7872|INFO|deephyper.search.hps.ambs:66] Initializing AMBS
+2021-07-22 20:01:03|7872|INFO|deephyper.search.hps.ambs:67] kappa=1.96, xi=0.01
+2021-07-22 20:01:03|7872|INFO|deephyper.search.hps.ambs:132] Generating 64 initial points...
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.01, 'units': 10, 'id': UUID('76a4f7e0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.9030309274582777, 'units': 99, 'id': UUID('76b17e16-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.4012803449312853, 'units': 78, 'id': UUID('76b1abde-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.5283016424398165, 'units': 5, 'id': UUID('76b1d262-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.8346746642496052, 'units': 20, 'id': UUID('76b1ed60-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.8766025366192921, 'units': 78, 'id': UUID('76b205ca-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.4191797960515881, 'units': 72, 'id': UUID('76b23de2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.19721777367170418, 'units': 83, 'id': UUID('76b25c28-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.46605303442899526, 'units': 66, 'id': UUID('76b2723a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.5569881887750971, 'units': 78, 'id': UUID('76b286b2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.6884601883480076, 'units': 33, 'id': UUID('76b29d0a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.4606825833067158, 'units': 15, 'id': UUID('76b2b150-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.6333410270985951, 'units': 71, 'id': UUID('76b2da90-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.7721754785854877, 'units': 51, 'id': UUID('76b3056a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.17360085857657184, 'units': 91, 'id': UUID('76b33fe4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.7457076476073685, 'units': 78, 'id': UUID('76b354b6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.043313531397674576, 'units': 31, 'id': UUID('76b36fa0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.6005700556496689, 'units': 60, 'id': UUID('76b385c6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.4763940216120005, 'units': 71, 'id': UUID('76b39b60-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.00551780508646572, 'units': 60, 'id': UUID('76b3af24-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.4337668602313599, 'units': 39, 'id': UUID('76b3c310-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.5432211982066563, 'units': 37, 'id': UUID('76b3d60c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9678395683301291, 'units': 12, 'id': UUID('76b3ead4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.40255225414986523, 'units': 37, 'id': UUID('76b3ffec-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.4100765868781795, 'units': 5, 'id': UUID('76b4122a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.09696668874585954, 'units': 4, 'id': UUID('76b43b10-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.25568341328346195, 'units': 97, 'id': UUID('76b45226-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.821889572318797, 'units': 25, 'id': UUID('76b46e50-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.75076190813438, 'units': 67, 'id': UUID('76b48372-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.36072302898688596, 'units': 5, 'id': UUID('76b49c54-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.04019402206300015, 'units': 45, 'id': UUID('76b4b5e0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.2728336018270752, 'units': 11, 'id': UUID('76b4ce2c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8985329720545335, 'units': 84, 'id': UUID('76b4e77c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8469454633916131, 'units': 2, 'id': UUID('76b506a8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.18690074030074003, 'units': 39, 'id': UUID('76b52340-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.7771885415567726, 'units': 14, 'id': UUID('76b537f4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.12487483278850842, 'units': 67, 'id': UUID('76b54e92-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.9314317203165562, 'units': 50, 'id': UUID('76b564cc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.20781089299598982, 'units': 96, 'id': UUID('76b57ac0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.09061588526001951, 'units': 49, 'id': UUID('76b59208-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.8895512458804375, 'units': 50, 'id': UUID('76b5a7ac-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.876054688676836, 'units': 83, 'id': UUID('76b5bc60-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.6562144732396396, 'units': 99, 'id': UUID('76b5d0a6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.8319901251993532, 'units': 62, 'id': UUID('76b5e46a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.08740626469242954, 'units': 73, 'id': UUID('76b5f798-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.3394673287879877, 'units': 99, 'id': UUID('76b60a94-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8824527503409314, 'units': 21, 'id': UUID('76b62114-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.04890431096622212, 'units': 31, 'id': UUID('76b63564-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.21934572619320106, 'units': 40, 'id': UUID('76b64d92-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.7065360929185163, 'units': 27, 'id': UUID('76b660de-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.5982304180838095, 'units': 80, 'id': UUID('76b6756a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.8548303914092166, 'units': 93, 'id': UUID('76b68910-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.13325319008586398, 'units': 58, 'id': UUID('76b6a7ec-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.2351382175128493, 'units': 52, 'id': UUID('76b6bf48-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.4356855305260808, 'units': 27, 'id': UUID('76b6d578-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.08328004262383544, 'units': 63, 'id': UUID('76b6eb62-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.34865499365599273, 'units': 52, 'id': UUID('76b6ffa8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.47960835232292814, 'units': 43, 'id': UUID('76b71a4c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.6564584767191314, 'units': 87, 'id': UUID('76b73216-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.9085221691022712, 'units': 53, 'id': UUID('76b745bc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.02787922837784087, 'units': 51, 'id': UUID('76b759f8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.33605941884587076, 'units': 100, 'id': UUID('76b76be6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.3501959023576173, 'units': 11, 'id': UUID('76b77f3c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:08|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.34001553420975, 'units': 12, 'id': UUID('76b793fa-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.34865499365599273, "units": 52, "id": "76b6ffa8-eb51-11eb-8df3-e974156e0e1f"} --> -0.385171502828598
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.34865499365599273, 'units': 52, 'id': '76b6fdd2-eb51-11eb-8df3-e974156e0e1f'} y: -0.385171502828598
+2021-07-22 20:01:21|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.11067081727710058, 'units': 91, 'id': UUID('7eb596c4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.9678395683301291, "units": 12, "id": "76b3ead4-eb51-11eb-8df3-e974156e0e1f"} --> 0.5560611486434937
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.9678395683301291, 'units': 12, 'id': '76b3e908-eb51-11eb-8df3-e974156e0e1f'} y: 0.5560611486434937
+2021-07-22 20:01:21|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.8071171869077429, 'units': 50, 'id': UUID('7edda13c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8824527503409314, "units": 21, "id": "76b62114-eb51-11eb-8df3-e974156e0e1f"} --> -0.4032924175262451
+2021-07-22 20:01:21|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8824527503409314, 'units': 21, 'id': '76b61f2a-eb51-11eb-8df3-e974156e0e1f'} y: -0.4032924175262451
+2021-07-22 20:01:21|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.7923599366016884, 'units': 22, 'id': UUID('7efe39b0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.25568341328346195, "units": 97, "id": "76b45226-eb51-11eb-8df3-e974156e0e1f"} --> -0.7181268334388733
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.25568341328346195, 'units': 97, 'id': '76b45028-eb51-11eb-8df3-e974156e0e1f'} y: -0.7181268334388733
+2021-07-22 20:01:22|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.5877240613762366, 'units': 29, 'id': UUID('7f20e8ca-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.8548303914092166, "units": 93, "id": "76b68910-eb51-11eb-8df3-e974156e0e1f"} --> -0.07178498804569244
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.8548303914092166, 'units': 93, 'id': '76b6874e-eb51-11eb-8df3-e974156e0e1f'} y: -0.07178498804569244
+2021-07-22 20:01:22|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.6674910243975487, 'units': 87, 'id': UUID('7f4035f4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.17360085857657184, "units": 91, "id": "76b33fe4-eb51-11eb-8df3-e974156e0e1f"} --> -0.6063748598098755
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.7457076476073685, "units": 78, "id": "76b354b6-eb51-11eb-8df3-e974156e0e1f"} --> -0.09828095138072968
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.17360085857657184, 'units': 91, 'id': '76b32cfc-eb51-11eb-8df3-e974156e0e1f'} y: -0.6063748598098755
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.7457076476073685, 'units': 78, 'id': '76b352ea-eb51-11eb-8df3-e974156e0e1f'} y: -0.09828095138072968
+2021-07-22 20:01:22|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.12699056623307126, 'units': 4, 'id': UUID('7f78e4da-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.4319541500697078, 'units': 31, 'id': UUID('7f794470-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.04890431096622212, "units": 31, "id": "76b63564-eb51-11eb-8df3-e974156e0e1f"} --> -0.10585831105709076
+2021-07-22 20:01:22|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.04890431096622212, 'units': 31, 'id': '76b63398-eb51-11eb-8df3-e974156e0e1f'} y: -0.10585831105709076
+2021-07-22 20:01:22|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.7718435467849687, 'units': 22, 'id': UUID('7f965d30-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.7721754785854877, "units": 51, "id": "76b3056a-eb51-11eb-8df3-e974156e0e1f"} --> 0.45709142088890076
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.9085221691022712, "units": 53, "id": "76b745bc-eb51-11eb-8df3-e974156e0e1f"} --> -1.7349449396133423
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.7721754785854877, 'units': 51, 'id': '76b30088-eb51-11eb-8df3-e974156e0e1f'} y: 0.45709142088890076
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.9085221691022712, 'units': 53, 'id': '76b743fa-eb51-11eb-8df3-e974156e0e1f'} y: -1.7349449396133423
+2021-07-22 20:01:23|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.6995092577316845, 'units': 92, 'id': UUID('7fc85c68-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.7303071472294596, 'units': 95, 'id': UUID('7fc8e854-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.6884601883480076, "units": 33, "id": "76b29d0a-eb51-11eb-8df3-e974156e0e1f"} --> -0.18276642262935638
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.6884601883480076, 'units': 33, 'id': '76b29ab2-eb51-11eb-8df3-e974156e0e1f'} y: -0.18276642262935638
+2021-07-22 20:01:23|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.19609628174562008, 'units': 39, 'id': UUID('7fe6b1c2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.5569881887750971, "units": 78, "id": "76b286b2-eb51-11eb-8df3-e974156e0e1f"} --> 0.7518563866615295
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.08740626469242954, "units": 73, "id": "76b5f798-eb51-11eb-8df3-e974156e0e1f"} --> -0.025773335248231888
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.5569881887750971, 'units': 78, 'id': '76b284be-eb51-11eb-8df3-e974156e0e1f'} y: 0.7518563866615295
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.08740626469242954, 'units': 73, 'id': '76b5f5b8-eb51-11eb-8df3-e974156e0e1f'} y: -0.025773335248231888
+2021-07-22 20:01:23|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.5649587256491365, 'units': 93, 'id': UUID('801390fc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:23|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.6436263092194047, 'units': 49, 'id': UUID('8013cbee-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.8346746642496052, "units": 20, "id": "76b1ed60-eb51-11eb-8df3-e974156e0e1f"} --> -0.03333105519413948
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.8346746642496052, 'units': 20, 'id': '76b1e734-eb51-11eb-8df3-e974156e0e1f'} y: -0.03333105519413948
+2021-07-22 20:01:24|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.7887156119024699, 'units': 27, 'id': UUID('805bb81e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.4606825833067158, "units": 15, "id": "76b2b150-eb51-11eb-8df3-e974156e0e1f"} --> 0.7399256825447083
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.13325319008586398, "units": 58, "id": "76b6a7ec-eb51-11eb-8df3-e974156e0e1f"} --> -0.02513410523533821
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.4606825833067158, 'units': 15, 'id': '76b2af66-eb51-11eb-8df3-e974156e0e1f'} y: 0.7399256825447083
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.13325319008586398, 'units': 58, 'id': '76b6a364-eb51-11eb-8df3-e974156e0e1f'} y: -0.02513410523533821
+2021-07-22 20:01:24|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.3747903874105453, 'units': 54, 'id': UUID('808e8d66-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.8287909165780262, 'units': 37, 'id': UUID('808ef436-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.4337668602313599, "units": 39, "id": "76b3c310-eb51-11eb-8df3-e974156e0e1f"} --> 0.8172512650489807
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.4337668602313599, 'units': 39, 'id': '76b3c14e-eb51-11eb-8df3-e974156e0e1f'} y: 0.8172512650489807
+2021-07-22 20:01:24|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:24|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.7780668752948827, 'units': 14, 'id': UUID('80ae4232-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.2728336018270752, "units": 11, "id": "76b4ce2c-eb51-11eb-8df3-e974156e0e1f"} --> -0.138178288936615
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.2728336018270752, 'units': 11, 'id': '76b4cc4c-eb51-11eb-8df3-e974156e0e1f'} y: -0.138178288936615
+2021-07-22 20:01:25|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.4515842905501007, 'units': 3, 'id': UUID('80e3e66c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8985329720545335, "units": 84, "id": "76b4e77c-eb51-11eb-8df3-e974156e0e1f"} --> -12.542293548583984
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8985329720545335, 'units': 84, 'id': '76b4e2e0-eb51-11eb-8df3-e974156e0e1f'} y: -12.542293548583984
+2021-07-22 20:01:25|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8558585988156746, 'units': 50, 'id': UUID('814a7026-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.9030309274582777, "units": 99, "id": "76b17e16-eb51-11eb-8df3-e974156e0e1f"} --> -12.19607162475586
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.40255225414986523, "units": 37, "id": "76b3ffec-eb51-11eb-8df3-e974156e0e1f"} --> -0.32683756947517395
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.47960835232292814, "units": 43, "id": "76b71a4c-eb51-11eb-8df3-e974156e0e1f"} --> -0.151243656873703
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.3501959023576173, "units": 11, "id": "76b77f3c-eb51-11eb-8df3-e974156e0e1f"} --> -0.02674371749162674
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.9030309274582777, 'units': 99, 'id': '76b17920-eb51-11eb-8df3-e974156e0e1f'} y: -12.19607162475586
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.40255225414986523, 'units': 37, 'id': '76b3fc54-eb51-11eb-8df3-e974156e0e1f'} y: -0.32683756947517395
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.47960835232292814, 'units': 43, 'id': '76b7186c-eb51-11eb-8df3-e974156e0e1f'} y: -0.151243656873703
+2021-07-22 20:01:25|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.3501959023576173, 'units': 11, 'id': '76b77d7a-eb51-11eb-8df3-e974156e0e1f'} y: -0.02674371749162674
+2021-07-22 20:01:25|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.7287337557954443, 'units': 10, 'id': UUID('818efd4a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.11860512972438751, 'units': 23, 'id': UUID('818f6686-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.6218115009492023, 'units': 44, 'id': UUID('818fa3d0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.03305470749940655, 'units': 77, 'id': UUID('81902a58-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8469454633916131, "units": 2, "id": "76b506a8-eb51-11eb-8df3-e974156e0e1f"} --> -0.19443005323410034
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8469454633916131, 'units': 2, 'id': '76b50496-eb51-11eb-8df3-e974156e0e1f'} y: -0.19443005323410034
+2021-07-22 20:01:26|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.5757167597078605, 'units': 40, 'id': UUID('81b94a00-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.18690074030074003, "units": 39, "id": "76b52340-eb51-11eb-8df3-e974156e0e1f"} --> -0.025740258395671844
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.8895512458804375, "units": 50, "id": "76b5a7ac-eb51-11eb-8df3-e974156e0e1f"} --> -0.5424838066101074
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.18690074030074003, 'units': 39, 'id': '76b520de-eb51-11eb-8df3-e974156e0e1f'} y: -0.025740258395671844
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.8895512458804375, 'units': 50, 'id': '76b5a568-eb51-11eb-8df3-e974156e0e1f'} y: -0.5424838066101074
+2021-07-22 20:01:26|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.6855826032487496, 'units': 29, 'id': UUID('81e89fb2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:26|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.0512185564374171, 'units': 31, 'id': UUID('81e8ecb0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.75076190813438, "units": 67, "id": "76b48372-eb51-11eb-8df3-e974156e0e1f"} --> -0.2588670551776886
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.6562144732396396, "units": 99, "id": "76b5d0a6-eb51-11eb-8df3-e974156e0e1f"} --> -0.08139413595199585
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.34001553420975, "units": 12, "id": "76b793fa-eb51-11eb-8df3-e974156e0e1f"} --> -0.16470950841903687
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.75076190813438, 'units': 67, 'id': '76b480de-eb51-11eb-8df3-e974156e0e1f'} y: -0.2588670551776886
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.6562144732396396, 'units': 99, 'id': '76b5ce9e-eb51-11eb-8df3-e974156e0e1f'} y: -0.08139413595199585
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.34001553420975, 'units': 12, 'id': '76b7922e-eb51-11eb-8df3-e974156e0e1f'} y: -0.16470950841903687
+2021-07-22 20:01:27|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.3927149524120615, 'units': 12, 'id': UUID('8222511c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.5254157003310445, 'units': 90, 'id': UUID('8222bf58-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.7235412681736453, 'units': 20, 'id': UUID('82230f8a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.4191797960515881, "units": 72, "id": "76b23de2-eb51-11eb-8df3-e974156e0e1f"} --> 0.8006762266159058
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.4191797960515881, 'units': 72, 'id': '76b21a9c-eb51-11eb-8df3-e974156e0e1f'} y: 0.8006762266159058
+2021-07-22 20:01:27|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.5410980747407448, 'units': 3, 'id': UUID('8245261a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.36072302898688596, "units": 5, "id": "76b49c54-eb51-11eb-8df3-e974156e0e1f"} --> -0.09685121476650238
+2021-07-22 20:01:27|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.36072302898688596, 'units': 5, 'id': '76b499d4-eb51-11eb-8df3-e974156e0e1f'} y: -0.09685121476650238
+2021-07-22 20:01:27|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:28|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.9632779021594731, 'units': 79, 'id': UUID('828ea25e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:28|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.6005700556496689, "units": 60, "id": "76b385c6-eb51-11eb-8df3-e974156e0e1f"} --> -0.1813317835330963
+2021-07-22 20:01:28|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.6005700556496689, 'units': 60, 'id': '76b383d2-eb51-11eb-8df3-e974156e0e1f'} y: -0.1813317835330963
+2021-07-22 20:01:28|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:28|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.17150224370483397, 'units': 96, 'id': UUID('82cb3052-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.5432211982066563, "units": 37, "id": "76b3d60c-eb51-11eb-8df3-e974156e0e1f"} --> 0.8022987842559814
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.5432211982066563, 'units': 37, 'id': '76b3d44a-eb51-11eb-8df3-e974156e0e1f'} y: 0.8022987842559814
+2021-07-22 20:01:29|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9721899953030013, 'units': 87, 'id': UUID('8334c4c2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.7065360929185163, "units": 27, "id": "76b660de-eb51-11eb-8df3-e974156e0e1f"} --> -0.39719805121421814
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.7065360929185163, 'units': 27, 'id': '76b65e22-eb51-11eb-8df3-e974156e0e1f'} y: -0.39719805121421814
+2021-07-22 20:01:29|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.2032745727453937, 'units': 9, 'id': UUID('83a73502-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.5283016424398165, "units": 5, "id": "76b1d262-eb51-11eb-8df3-e974156e0e1f"} --> -0.11684972047805786
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.33605941884587076, "units": 100, "id": "76b76be6-eb51-11eb-8df3-e974156e0e1f"} --> 0.8568716049194336
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.5877240613762366, "units": 29, "id": "7f20e8ca-eb51-11eb-8df3-e974156e0e1f"} --> -0.12696143984794617
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.5283016424398165, 'units': 5, 'id': '76b1ce48-eb51-11eb-8df3-e974156e0e1f'} y: -0.11684972047805786
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.33605941884587076, 'units': 100, 'id': '76b76a2e-eb51-11eb-8df3-e974156e0e1f'} y: 0.8568716049194336
+2021-07-22 20:01:29|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.5877240613762366, 'units': 29, 'id': '7f20e4ba-eb51-11eb-8df3-e974156e0e1f'} y: -0.12696143984794617
+2021-07-22 20:01:29|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8678760272364907, 'units': 4, 'id': UUID('83ff084a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.4510099819313099, 'units': 93, 'id': UUID('83ff712c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.7481411905119174, 'units': 97, 'id': UUID('83ff98d2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.19721777367170418, "units": 83, "id": "76b25c28-eb51-11eb-8df3-e974156e0e1f"} --> 0.9299413561820984
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.46605303442899526, "units": 66, "id": "76b2723a-eb51-11eb-8df3-e974156e0e1f"} --> 0.7308574318885803
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.4100765868781795, "units": 5, "id": "76b4122a-eb51-11eb-8df3-e974156e0e1f"} --> -0.02555863931775093
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.2351382175128493, "units": 52, "id": "76b6bf48-eb51-11eb-8df3-e974156e0e1f"} --> -0.03572162985801697
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.19721777367170418, 'units': 83, 'id': '76b25a02-eb51-11eb-8df3-e974156e0e1f'} y: 0.9299413561820984
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.46605303442899526, 'units': 66, 'id': '76b27014-eb51-11eb-8df3-e974156e0e1f'} y: 0.7308574318885803
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.4100765868781795, 'units': 5, 'id': '76b41072-eb51-11eb-8df3-e974156e0e1f'} y: -0.02555863931775093
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.2351382175128493, 'units': 52, 'id': '76b6bd68-eb51-11eb-8df3-e974156e0e1f'} y: -0.03572162985801697
+2021-07-22 20:01:30|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.8650794311834084, 'units': 86, 'id': UUID('84538bc2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.25106965957452093, 'units': 84, 'id': UUID('84542fc8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.3622618179701241, 'units': 38, 'id': UUID('8454668c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:30|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.3445878279960541, 'units': 1, 'id': UUID('8454a994-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.8319901251993532, "units": 62, "id": "76b5e46a-eb51-11eb-8df3-e974156e0e1f"} --> -0.08990652114152908
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.8319901251993532, 'units': 62, 'id': '76b5e2a8-eb51-11eb-8df3-e974156e0e1f'} y: -0.08990652114152908
+2021-07-22 20:01:31|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.3242483890028381, 'units': 34, 'id': UUID('848aa684-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.12487483278850842, "units": 67, "id": "76b54e92-eb51-11eb-8df3-e974156e0e1f"} --> 0.9265413880348206
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.12487483278850842, 'units': 67, 'id': '76b54c6c-eb51-11eb-8df3-e974156e0e1f'} y: 0.9265413880348206
+2021-07-22 20:01:31|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:31|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.20723524919273978, 'units': 17, 'id': UUID('84c03d8a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.876054688676836, "units": 83, "id": "76b5bc60-eb51-11eb-8df3-e974156e0e1f"} --> -0.4303542971611023
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.876054688676836, 'units': 83, 'id': '76b5ba4e-eb51-11eb-8df3-e974156e0e1f'} y: -0.4303542971611023
+2021-07-22 20:01:32|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.7051526372101692, 'units': 76, 'id': UUID('851586a0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.7771885415567726, "units": 14, "id": "76b537f4-eb51-11eb-8df3-e974156e0e1f"} --> -0.25231924653053284
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.09061588526001951, "units": 49, "id": "76b59208-eb51-11eb-8df3-e974156e0e1f"} --> 0.9545871019363403
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.7771885415567726, 'units': 14, 'id': '76b535f6-eb51-11eb-8df3-e974156e0e1f'} y: -0.25231924653053284
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.09061588526001951, 'units': 49, 'id': '76b58e70-eb51-11eb-8df3-e974156e0e1f'} y: 0.9545871019363403
+2021-07-22 20:01:32|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.10108027653161021, 'units': 68, 'id': UUID('857bf3cc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:32|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.056333933765913155, 'units': 55, 'id': UUID('857c6212-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.7303071472294596, "units": 95, "id": "7fc8e854-eb51-11eb-8df3-e974156e0e1f"} --> -0.4378429055213928
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.7303071472294596, 'units': 95, 'id': '7fc8e4bc-eb51-11eb-8df3-e974156e0e1f'} y: -0.4378429055213928
+2021-07-22 20:01:33|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.6134540969083626, 'units': 20, 'id': UUID('85c100d4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.21934572619320106, "units": 40, "id": "76b64d92-eb51-11eb-8df3-e974156e0e1f"} --> -0.028886806219816208
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.21934572619320106, 'units': 40, 'id': '76b64ba8-eb51-11eb-8df3-e974156e0e1f'} y: -0.028886806219816208
+2021-07-22 20:01:33|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.7529739370355419, 'units': 3, 'id': UUID('85e7131e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.043313531397674576, "units": 31, "id": "76b36fa0-eb51-11eb-8df3-e974156e0e1f"} --> 0.9700964689254761
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.043313531397674576, 'units': 31, 'id': '76b36988-eb51-11eb-8df3-e974156e0e1f'} y: 0.9700964689254761
+2021-07-22 20:01:33|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:33|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.8915044010771691, 'units': 1, 'id': UUID('8602c19a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.01, "units": 10, "id": "76a4f7e0-eb51-11eb-8df3-e974156e0e1f"} --> -0.06858667731285095
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.01, 'units': 10, 'id': '76a4cd4c-eb51-11eb-8df3-e974156e0e1f'} y: -0.06858667731285095
+2021-07-22 20:01:34|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.6872760056784747, 'units': 27, 'id': UUID('867a7744-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.11067081727710058, "units": 91, "id": "7eb596c4-eb51-11eb-8df3-e974156e0e1f"} --> -0.01617041975259781
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.11067081727710058, 'units': 91, 'id': '7eb589ae-eb51-11eb-8df3-e974156e0e1f'} y: -0.01617041975259781
+2021-07-22 20:01:34|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:34|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.44894286838510966, 'units': 51, 'id': UUID('869afc6c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.6564584767191314, "units": 87, "id": "76b73216-eb51-11eb-8df3-e974156e0e1f"} --> -0.05028347298502922
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.6564584767191314, 'units': 87, 'id': '76b72e7e-eb51-11eb-8df3-e974156e0e1f'} y: -0.05028347298502922
+2021-07-22 20:01:35|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.3313578457732359, 'units': 15, 'id': UUID('870c3b20-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.7887156119024699, "units": 27, "id": "805bb81e-eb51-11eb-8df3-e974156e0e1f"} --> -0.13958367705345154
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.7887156119024699, 'units': 27, 'id': '805bb378-eb51-11eb-8df3-e974156e0e1f'} y: -0.13958367705345154
+2021-07-22 20:01:35|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:35|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.5217370854450692, 'units': 18, 'id': UUID('874ce0ee-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.7780668752948827, "units": 14, "id": "80ae4232-eb51-11eb-8df3-e974156e0e1f"} --> 0.5655252933502197
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.7780668752948827, 'units': 14, 'id': '80ae3af8-eb51-11eb-8df3-e974156e0e1f'} y: 0.5655252933502197
+2021-07-22 20:01:36|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.582367449772897, 'units': 63, 'id': UUID('879d9fd4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.4356855305260808, "units": 27, "id": "76b6d578-eb51-11eb-8df3-e974156e0e1f"} --> 0.8177444934844971
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.08328004262383544, "units": 63, "id": "76b6eb62-eb51-11eb-8df3-e974156e0e1f"} --> 0.9604349136352539
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.02787922837784087, "units": 51, "id": "76b759f8-eb51-11eb-8df3-e974156e0e1f"} --> -0.025572195649147034
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.19609628174562008, "units": 39, "id": "7fe6b1c2-eb51-11eb-8df3-e974156e0e1f"} --> 0.9438631534576416
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.9632779021594731, "units": 79, "id": "828ea25e-eb51-11eb-8df3-e974156e0e1f"} --> -1.8974061012268066
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.4356855305260808, 'units': 27, 'id': '76b6d32a-eb51-11eb-8df3-e974156e0e1f'} y: 0.8177444934844971
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.08328004262383544, 'units': 63, 'id': '76b6e996-eb51-11eb-8df3-e974156e0e1f'} y: 0.9604349136352539
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.02787922837784087, 'units': 51, 'id': '76b7582c-eb51-11eb-8df3-e974156e0e1f'} y: -0.025572195649147034
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.19609628174562008, 'units': 39, 'id': '7fe6adee-eb51-11eb-8df3-e974156e0e1f'} y: 0.9438631534576416
+2021-07-22 20:01:36|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.9632779021594731, 'units': 79, 'id': '828e9d18-eb51-11eb-8df3-e974156e0e1f'} y: -1.8974061012268066
+2021-07-22 20:01:36|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'identity', 'lr': 0.048220772512568566, 'units': 30, 'id': UUID('8805a552-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.7156764038453334, 'units': 94, 'id': UUID('8805cd34-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.16834082448632406, 'units': 70, 'id': UUID('8805e76a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.18782512036975887, 'units': 8, 'id': UUID('880610aa-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.4231730313652497, 'units': 6, 'id': UUID('88065556-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.20781089299598982, "units": 96, "id": "76b57ac0-eb51-11eb-8df3-e974156e0e1f"} --> 0.8961020708084106
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.7718435467849687, "units": 22, "id": "7f965d30-eb51-11eb-8df3-e974156e0e1f"} --> -0.3430728614330292
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.8287909165780262, "units": 37, "id": "808ef436-eb51-11eb-8df3-e974156e0e1f"} --> -0.1229085624217987
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.5757167597078605, "units": 40, "id": "81b94a00-eb51-11eb-8df3-e974156e0e1f"} --> 0.4525487720966339
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.6855826032487496, "units": 29, "id": "81e89fb2-eb51-11eb-8df3-e974156e0e1f"} --> -0.405519038438797
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.20781089299598982, 'units': 96, 'id': '76b578c2-eb51-11eb-8df3-e974156e0e1f'} y: 0.8961020708084106
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.7718435467849687, 'units': 22, 'id': '7f965948-eb51-11eb-8df3-e974156e0e1f'} y: -0.3430728614330292
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.8287909165780262, 'units': 37, 'id': '808eeff4-eb51-11eb-8df3-e974156e0e1f'} y: -0.1229085624217987
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.5757167597078605, 'units': 40, 'id': '81b93290-eb51-11eb-8df3-e974156e0e1f'} y: 0.4525487720966339
+2021-07-22 20:01:37|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.6855826032487496, 'units': 29, 'id': '81e898fa-eb51-11eb-8df3-e974156e0e1f'} y: -0.405519038438797
+2021-07-22 20:01:37|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.8927070828870972, 'units': 83, 'id': UUID('88d4bc48-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.48701593960104433, 'units': 99, 'id': UUID('88d58164-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.8952449428866106, 'units': 99, 'id': UUID('88d5df1a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'sigmoid', 'lr': 0.8901802118832969, 'units': 99, 'id': UUID('88d65da0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.8918830094774384, 'units': 35, 'id': UUID('88d7c3ac-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.04019402206300015, "units": 45, "id": "76b4b5e0-eb51-11eb-8df3-e974156e0e1f"} --> 0.97829669713974
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.7923599366016884, "units": 22, "id": "7efe39b0-eb51-11eb-8df3-e974156e0e1f"} --> -0.16238488256931305
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.4515842905501007, "units": 3, "id": "80e3e66c-eb51-11eb-8df3-e974156e0e1f"} --> -0.08294770121574402
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8558585988156746, "units": 50, "id": "814a7026-eb51-11eb-8df3-e974156e0e1f"} --> -0.16553938388824463
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.4510099819313099, "units": 93, "id": "83ff712c-eb51-11eb-8df3-e974156e0e1f"} --> -1.0319151878356934
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.04019402206300015, 'units': 45, 'id': '76b4b3f6-eb51-11eb-8df3-e974156e0e1f'} y: 0.97829669713974
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.7923599366016884, 'units': 22, 'id': '7efe2c86-eb51-11eb-8df3-e974156e0e1f'} y: -0.16238488256931305
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.4515842905501007, 'units': 3, 'id': '80e3e176-eb51-11eb-8df3-e974156e0e1f'} y: -0.08294770121574402
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8558585988156746, 'units': 50, 'id': '814a6a54-eb51-11eb-8df3-e974156e0e1f'} y: -0.16553938388824463
+2021-07-22 20:01:38|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.4510099819313099, 'units': 93, 'id': '83ff6e7a-eb51-11eb-8df3-e974156e0e1f'} y: -1.0319151878356934
+2021-07-22 20:01:38|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9441855354431903, 'units': 23, 'id': UUID('89bf4b5a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9035303069270947, 'units': 25, 'id': UUID('89bf8796-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.23025501975858031, 'units': 100, 'id': UUID('89bfc86e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9695870124018403, 'units': 57, 'id': UUID('89bfec68-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9596183088232055, 'units': 74, 'id': UUID('89c01ddc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8678760272364907, "units": 4, "id": "83ff084a-eb51-11eb-8df3-e974156e0e1f"} --> -0.14689180254936218
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.7481411905119174, "units": 97, "id": "83ff98d2-eb51-11eb-8df3-e974156e0e1f"} --> -0.6794079542160034
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.8650794311834084, "units": 86, "id": "84538bc2-eb51-11eb-8df3-e974156e0e1f"} --> -0.2997317910194397
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8678760272364907, 'units': 4, 'id': '83fefff8-eb51-11eb-8df3-e974156e0e1f'} y: -0.14689180254936218
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.7481411905119174, 'units': 97, 'id': '83ff94ae-eb51-11eb-8df3-e974156e0e1f'} y: -0.6794079542160034
+2021-07-22 20:01:40|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.8650794311834084, 'units': 86, 'id': '8453883e-eb51-11eb-8df3-e974156e0e1f'} y: -0.2997317910194397
+2021-07-22 20:01:40|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:41|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.00038211252256024344, 'units': 99, 'id': UUID('8a6b8fbe-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:41|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.15764075998549248, 'units': 99, 'id': UUID('8a6bf3c8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:41|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'tanh', 'lr': 0.9871036250437248, 'units': 79, 'id': UUID('8a6c23de-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:41|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.4319541500697078, "units": 31, "id": "7f794470-eb51-11eb-8df3-e974156e0e1f"} --> -0.13942259550094604
+2021-07-22 20:01:41|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.4319541500697078, 'units': 31, 'id': '7f79406a-eb51-11eb-8df3-e974156e0e1f'} y: -0.13942259550094604
+2021-07-22 20:01:41|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:42|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.008170062443265383, 'units': 16, 'id': UUID('8b113f5e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:43|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.0512185564374171, "units": 31, "id": "81e8ecb0-eb51-11eb-8df3-e974156e0e1f"} --> -0.08273892104625702
+2021-07-22 20:01:43|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.6872760056784747, "units": 27, "id": "867a7744-eb51-11eb-8df3-e974156e0e1f"} --> -0.5234076380729675
+2021-07-22 20:01:43|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.0512185564374171, 'units': 31, 'id': '81e8e8d2-eb51-11eb-8df3-e974156e0e1f'} y: -0.08273892104625702
+2021-07-22 20:01:43|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.6872760056784747, 'units': 27, 'id': '867a69ac-eb51-11eb-8df3-e974156e0e1f'} y: -0.5234076380729675
+2021-07-22 20:01:43|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9886769183529879, 'units': 60, 'id': UUID('8c7cbcba-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.030429707129542776, 'units': 2, 'id': UUID('8c7d3b54-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.11860512972438751, "units": 23, "id": "818f6686-eb51-11eb-8df3-e974156e0e1f"} --> -0.016280077397823334
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.9721899953030013, "units": 87, "id": "8334c4c2-eb51-11eb-8df3-e974156e0e1f"} --> 0.6486049890518188
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.7051526372101692, "units": 76, "id": "851586a0-eb51-11eb-8df3-e974156e0e1f"} --> 0.7036658525466919
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.10108027653161021, "units": 68, "id": "857bf3cc-eb51-11eb-8df3-e974156e0e1f"} --> -0.11586152017116547
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.8915044010771691, "units": 1, "id": "8602c19a-eb51-11eb-8df3-e974156e0e1f"} --> -0.18531814217567444
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.11860512972438751, 'units': 23, 'id': '818f617c-eb51-11eb-8df3-e974156e0e1f'} y: -0.016280077397823334
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.9721899953030013, 'units': 87, 'id': '8334bff4-eb51-11eb-8df3-e974156e0e1f'} y: 0.6486049890518188
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.7051526372101692, 'units': 76, 'id': '85158344-eb51-11eb-8df3-e974156e0e1f'} y: 0.7036658525466919
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.10108027653161021, 'units': 68, 'id': '857bef62-eb51-11eb-8df3-e974156e0e1f'} y: -0.11586152017116547
+2021-07-22 20:01:44|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.8915044010771691, 'units': 1, 'id': '8602baf6-eb51-11eb-8df3-e974156e0e1f'} y: -0.18531814217567444
+2021-07-22 20:01:44|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.05471803542670681, 'units': 99, 'id': UUID('8d740fa6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9520450740861075, 'units': 84, 'id': UUID('8d746726-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9765222724704721, 'units': 97, 'id': UUID('8d74ca9a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.0008633118635124489, 'units': 99, 'id': UUID('8d753840-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9319063804966018, 'units': 99, 'id': UUID('8d757184-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.5254157003310445, "units": 90, "id": "8222bf58-eb51-11eb-8df3-e974156e0e1f"} --> -0.06156253069639206
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.17150224370483397, "units": 96, "id": "82cb3052-eb51-11eb-8df3-e974156e0e1f"} --> -0.029291559010744095
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.3622618179701241, "units": 38, "id": "8454668c-eb51-11eb-8df3-e974156e0e1f"} --> -0.13510455191135406
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.20723524919273978, "units": 17, "id": "84c03d8a-eb51-11eb-8df3-e974156e0e1f"} --> -0.016373515129089355
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.5254157003310445, 'units': 90, 'id': '8222bb66-eb51-11eb-8df3-e974156e0e1f'} y: -0.06156253069639206
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.17150224370483397, 'units': 96, 'id': '82cb2b5c-eb51-11eb-8df3-e974156e0e1f'} y: -0.029291559010744095
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.3622618179701241, 'units': 38, 'id': '8454640c-eb51-11eb-8df3-e974156e0e1f'} y: -0.13510455191135406
+2021-07-22 20:01:46|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.20723524919273978, 'units': 17, 'id': '84c038ee-eb51-11eb-8df3-e974156e0e1f'} y: -0.016373515129089355
+2021-07-22 20:01:46|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.010308158004555415, 'units': 23, 'id': UUID('8e41cb6c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.06807636527518185, 'units': 5, 'id': UUID('8e42154a-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.1335890227334128, 'units': 2, 'id': UUID('8e424bdc-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9965832375959566, 'units': 93, 'id': UUID('8e42738c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.5410980747407448, "units": 3, "id": "8245261a-eb51-11eb-8df3-e974156e0e1f"} --> -0.021260809153318405
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.9441855354431903, "units": 23, "id": "89bf4b5a-eb51-11eb-8df3-e974156e0e1f"} --> 0.5582032203674316
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.5410980747407448, 'units': 3, 'id': '8245217e-eb51-11eb-8df3-e974156e0e1f'} y: -0.021260809153318405
+2021-07-22 20:01:47|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.9441855354431903, 'units': 23, 'id': '89bf4722-eb51-11eb-8df3-e974156e0e1f'} y: 0.5582032203674316
+2021-07-22 20:01:47|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.2160265045710257, 'units': 99, 'id': UUID('8ed718e8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9087929613200059, 'units': 63, 'id': UUID('8ed77c52-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.03305470749940655, "units": 77, "id": "81902a58-eb51-11eb-8df3-e974156e0e1f"} --> 0.9783363938331604
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.7529739370355419, "units": 3, "id": "85e7131e-eb51-11eb-8df3-e974156e0e1f"} --> -0.07214990258216858
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.03305470749940655, 'units': 77, 'id': '8190267a-eb51-11eb-8df3-e974156e0e1f'} y: 0.9783363938331604
+2021-07-22 20:01:48|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.7529739370355419, 'units': 3, 'id': '85e70eb4-eb51-11eb-8df3-e974156e0e1f'} y: -0.07214990258216858
+2021-07-22 20:01:48|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.01929951791179892, 'units': 99, 'id': UUID('8f6ac962-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.009158887651755971, 'units': 99, 'id': UUID('8f6b16e2-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.3747903874105453, "units": 54, "id": "808e8d66-eb51-11eb-8df3-e974156e0e1f"} --> 0.8740213513374329
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.3927149524120615, "units": 12, "id": "8222511c-eb51-11eb-8df3-e974156e0e1f"} --> -0.017737990245223045
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.44894286838510966, "units": 51, "id": "869afc6c-eb51-11eb-8df3-e974156e0e1f"} --> 0.6940788626670837
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.3313578457732359, "units": 15, "id": "870c3b20-eb51-11eb-8df3-e974156e0e1f"} --> -0.01638788729906082
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.3747903874105453, 'units': 54, 'id': '808e8712-eb51-11eb-8df3-e974156e0e1f'} y: 0.8740213513374329
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.3927149524120615, 'units': 12, 'id': '8222068a-eb51-11eb-8df3-e974156e0e1f'} y: -0.017737990245223045
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.44894286838510966, 'units': 51, 'id': '869af686-eb51-11eb-8df3-e974156e0e1f'} y: 0.6940788626670837
+2021-07-22 20:01:49|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.3313578457732359, 'units': 15, 'id': '870c3602-eb51-11eb-8df3-e974156e0e1f'} y: -0.01638788729906082
+2021-07-22 20:01:49|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.09541732463054658, 'units': 8, 'id': UUID('90328d80-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.10884036326141094, 'units': 99, 'id': UUID('9032df56-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.05628248971646142, 'units': 2, 'id': UUID('90331bf6-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9251095612861729, 'units': 75, 'id': UUID('9033dfc8-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.582367449772897, "units": 63, "id": "879d9fd4-eb51-11eb-8df3-e974156e0e1f"} --> 0.5131296515464783
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "identity", "lr": 0.048220772512568566, "units": 30, "id": "8805a552-eb51-11eb-8df3-e974156e0e1f"} --> -0.16182422637939453
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.8927070828870972, "units": 83, "id": "88d4bc48-eb51-11eb-8df3-e974156e0e1f"} --> -0.05225334316492081
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.582367449772897, 'units': 63, 'id': '879d9bd8-eb51-11eb-8df3-e974156e0e1f'} y: 0.5131296515464783
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'identity', 'lr': 0.048220772512568566, 'units': 30, 'id': '8805a188-eb51-11eb-8df3-e974156e0e1f'} y: -0.16182422637939453
+2021-07-22 20:01:50|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.8927070828870972, 'units': 83, 'id': '88d4af82-eb51-11eb-8df3-e974156e0e1f'} y: -0.05225334316492081
+2021-07-22 20:01:50|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9538844446870606, 'units': 95, 'id': UUID('90dc86be-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.18493298509634168, 'units': 100, 'id': UUID('90dce30c-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.024485075847516802, 'units': 28, 'id': UUID('90dd3118-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.2032745727453937, "units": 9, "id": "83a73502-eb51-11eb-8df3-e974156e0e1f"} --> -0.016307789832353592
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.9596183088232055, "units": 74, "id": "89c01ddc-eb51-11eb-8df3-e974156e0e1f"} --> 0.6274042129516602
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.9886769183529879, "units": 60, "id": "8c7cbcba-eb51-11eb-8df3-e974156e0e1f"} --> 0.4950719177722931
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.2032745727453937, 'units': 9, 'id': '83a72f12-eb51-11eb-8df3-e974156e0e1f'} y: -0.016307789832353592
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.9596183088232055, 'units': 74, 'id': '89c01ada-eb51-11eb-8df3-e974156e0e1f'} y: 0.6274042129516602
+2021-07-22 20:01:52|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.9886769183529879, 'units': 60, 'id': '8c7cb7ce-eb51-11eb-8df3-e974156e0e1f'} y: 0.4950719177722931
+2021-07-22 20:01:52|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.2162905270802361, 'units': 85, 'id': UUID('917f4b24-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.12558609855882683, 'units': 98, 'id': UUID('917f949e-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9222398312652026, 'units': 21, 'id': UUID('917fef16-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "tanh", "lr": 0.821889572318797, "units": 25, "id": "76b46e50-eb51-11eb-8df3-e974156e0e1f"} --> -0.027702655643224716
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "relu", "lr": 0.48701593960104433, "units": 99, "id": "88d58164-eb51-11eb-8df3-e974156e0e1f"} --> 0.7516593933105469
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:296] New eval finished: {"activation": "sigmoid", "lr": 0.8901802118832969, "units": 99, "id": "88d65da0-eb51-11eb-8df3-e974156e0e1f"} --> -0.040878113359212875
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'tanh', 'lr': 0.821889572318797, 'units': 25, 'id': '76b46bda-eb51-11eb-8df3-e974156e0e1f'} y: -0.027702655643224716
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'relu', 'lr': 0.48701593960104433, 'units': 99, 'id': '88d57d68-eb51-11eb-8df3-e974156e0e1f'} y: 0.7516593933105469
+2021-07-22 20:01:53|7872|INFO|deephyper.evaluator.evaluate:307] Requested eval x: {'activation': 'sigmoid', 'lr': 0.8901802118832969, 'units': 99, 'id': '88d65972-eb51-11eb-8df3-e974156e0e1f'} y: -0.040878113359212875
+2021-07-22 20:01:53|7872|INFO|deephyper.search.hps.ambs:143] >>> {"type": "env_stats", "num_cache_used": 0}
+2021-07-22 20:01:54|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.007327007562033899, 'units': 14, 'id': UUID('922c50da-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:54|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.9235654908614555, 'units': 1, 'id': UUID('922c94b4-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-22 20:01:54|7872|INFO|deephyper.evaluator.evaluate:191] Submitted new eval of {'activation': 'relu', 'lr': 0.35697050610575193, 'units': 85, 'id': UUID('922cc0b0-eb51-11eb-8df3-e974156e0e1f')}
+2021-07-23 22:13:05|11947|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-23 19:13:25|6615|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-23 20:32:34|45864|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-26 10:06:40|37702|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-26 22:34:57|54104|INFO|deephyper:69] 
+
+Loading Deephyper
+--------------
+2021-07-26 22:34:57|54104|ERROR|deephyper:72] Uncaught exception:
+Traceback (most recent call last):
+  File "/home/acossairt/miniconda3/envs/ML_env/bin/deephyper", line 8, in <module>
+    sys.exit(main())
+  File "/home/acossairt/miniconda3/envs/ML_env/lib/python3.7/site-packages/deephyper/core/cli/cli.py", line 51, in main
+    func(**kwargs)
+  File "/home/acossairt/miniconda3/envs/ML_env/lib/python3.7/site-packages/deephyper/core/cli/new_problem.py", line 25, in main
+    os.mkdir(prob_name)
+FileExistsError: [Errno 17] File exists: 'polynome2'

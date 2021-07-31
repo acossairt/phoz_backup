@@ -1,0 +1,41 @@
+{
+  "start_timestamp": 1627002063.4160407,
+  "num_workers": 64,
+  "max_evals": 100,
+  "problem": {
+    "hyperparameters": [
+      {
+        "name": "activation",
+        "type": "categorical",
+        "choices": [
+          "identity",
+          "relu",
+          "sigmoid",
+          "tanh"
+        ],
+        "default": "identity",
+        "probabilities": null
+      },
+      {
+        "name": "lr",
+        "type": "uniform_float",
+        "log": false,
+        "lower": 0.0001,
+        "upper": 1.0,
+        "default": 0.50005
+      },
+      {
+        "name": "units",
+        "type": "uniform_int",
+        "log": false,
+        "lower": 1,
+        "upper": 100,
+        "default": 50
+      }
+    ],
+    "conditions": [],
+    "forbiddens": [],
+    "python_module_version": "0.4.18",
+    "json_format_version": 0.2
+  }
+}

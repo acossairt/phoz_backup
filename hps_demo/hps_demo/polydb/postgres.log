@@ -1,0 +1,6 @@
+2021-07-23 17:12:39.916 CDT [11466] LOG:  starting PostgreSQL 12.2 on x86_64-pc-linux-gnu, compiled by x86_64-conda_cos6-linux-gnu-cc (crosstool-NG 1.23.0.449-a04d0) 7.3.0, 64-bit
+2021-07-23 17:12:39.916 CDT [11466] LOG:  listening on IPv4 address "0.0.0.0", port 54169
+2021-07-23 17:12:39.916 CDT [11466] LOG:  listening on IPv6 address "::", port 54169
+2021-07-23 17:12:39.963 CDT [11466] LOG:  listening on Unix socket "/tmp/.s.PGSQL.54169"
+2021-07-23 17:12:40.099 CDT [11466] LOG:  redirecting log output to logging collector process
+2021-07-23 17:12:40.099 CDT [11466] HINT:  Future log output will appear in directory "log".

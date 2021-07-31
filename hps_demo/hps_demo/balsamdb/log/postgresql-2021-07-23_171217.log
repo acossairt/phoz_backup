@@ -1,0 +1,6 @@
+2021-07-23 17:12:17.633 CDT [11021] LOG:  database system was shut down at 2021-07-23 17:12:00 CDT
+2021-07-23 17:12:17.674 CDT [11019] LOG:  database system is ready to accept connections
+2021-07-23 17:12:17.952 CDT [11028] LOG:  connection received: host=146.139.10.20 port=42090
+2021-07-23 17:12:17.953 CDT [11028] LOG:  connection authorized: user=acossairt database=balsam
+2021-07-23 17:12:17.962 CDT [11028] LOG:  duration: 0.391 ms  statement: SET TIME ZONE 'UTC'
+2021-07-23 17:12:17.964 CDT [11028] LOG:  duration: 2.460 ms  statement: SELECT COUNT(*) AS "__count" FROM "core_balsamjob"
